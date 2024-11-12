@@ -13,9 +13,16 @@ struct RunningWorkout {
     var distance: Double
     var time: Double
     var elevation: Double
+    static func mileTimeFor(distance: Double, time: Double) -> Double {
+        let miles = distance / 1600.0
+        let mileTime = time / miles
+        return mileTime
+    }
 }
-
-
+let distance = 5000.0
+let time = 1800.0
+let averageMileTime = RunningWorkout.mileTimeFor(distance: distance, time: time)
+print("Average mile time: \(averageMileTime) seconds")
 
 //:  It may be helpful to have a few type properties on `RunningWorkout` representing unit conversions (i.e. meters to mile, feet to meters, etc.). Go back and add a type property for `meterInFeet` and assign it 3.28084. Then add a type property for `mileInMeters` and assign it 1600.0. Print both of these values below.
 
