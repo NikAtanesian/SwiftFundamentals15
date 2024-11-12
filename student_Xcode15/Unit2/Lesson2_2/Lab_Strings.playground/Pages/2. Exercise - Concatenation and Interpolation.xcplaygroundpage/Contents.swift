@@ -19,7 +19,7 @@ var introduction = "I live in \(home)"
  Insert `name` where indicated, and insert a mathematical expression that evaluates to your current age plus one where indicated.
  */
 let name = "Nikolas Atanesian"
-let age = 21
+let age: Int = 21
 print("My name is \(name) and after my next birthday I will be \(age + 1) years old")
 
 /*:
