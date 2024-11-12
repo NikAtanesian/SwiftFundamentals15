@@ -29,6 +29,9 @@ func magicEightBall(){
     }
 }
 magicEightBall()
+magicEightBall()
+magicEightBall()
+magicEightBall()
 
 /*:
 page 1 of 6  |  [Next: App Exercise - A Functioning App](@next)
